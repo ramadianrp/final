@@ -5,35 +5,121 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
     </head>
     <body>
        
         <!-- navbar -->
         <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Logo</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#about">ABOUT</a></li>
-                  <li><a href="#services">SERVICES</a></li>
-                  <li><a href="#portfolio">PORTFOLIO</a></li>
-                  <li><a href="#pricing">PRICING</a></li>
-                  <li><a href="#contact">CONTACT</a></li>
-                </ul>
-              </div>
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="home.html">HOME</a>
             </div>
-          </nav>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="reserve.html">RESERVATION</a></li>
+                <li><a href="#ourdeals">OUR DEALS</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
         <!-- form -->
-        <form>
+        <!-- <section id="formreservation">
+          <form>
+            <div class="form">
+              <label> Name </label>
+              <input id="inpName" type="text" name="Name">
+          </div>
+          <div class="form">
+            <label> Address </label>
+            <input id="inpAddress" type="text" name="Address">
+          </div>
+          </form>
+      </section> -->
+      
+      <section id="input-form">
+        <h1>Choose Ur Date!</h1>
+        <form class="form">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="name" class="form-control" id="name" placeholder="Your Name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="name">Phone Number:</label>
+            <input type="phone-number" class="form-control" id="number" placeholder="Your Phone Number" name="number">
+          </div>
+          <div class="options">
+            <form action="#">
+                <fieldset>
+                    <label for="tutorial">Choose Your Package</label>
+                    <select name="tutorial" id="tutorial">
+                        <option>Couple</option>
+                        <option>Family</option>
+                        <option>Retired</option>
+                        <option>Big Family</option>
+                    </select>
+                </fieldset>
+            </form>
+        </div>
+          <div class="bootstrap-iso">
+            <div class="container-fluid">
+             <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+           
+               <!-- Form code begins -->
+               <form method="post">
+                 <div class="form-group"> <!-- Date input -->
+                   <label class="control-label" for="date">Date </label>
+                   <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                 </div>
+                 
+                </form>
+                <form method="post">
+                  <div class="form-group"> <!-- Date input -->
+                    <label class="control-label" for="date">Until </label>
+                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                  </div>
+                  
+                 </form>
+                <!-- Form code ends --> 
+           
+               </div>
+             </div>    
+            </div>
+           </div>
 
+            <script>
+              $(document).ready(function(){
+                var date_input=$('input[name="date"]'); //our date input has the name "date"
+                var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                var options={
+                  format: 'mm/dd/yyyy',
+                  container: container,
+                  todayHighlight: true,
+                  autoclose: true,
+                };
+                date_input.datepicker(options);
+              })
+            </script>
+          <button type="submit" class="btn btn-default">Submit</button>
         </form>
+        
+      </section>
+      
     </body>
 </html>
