@@ -1,6 +1,6 @@
 body{
     background-size: cover;
-    background-image: url(DSC_0259.JPG);
+    background-image: url(img/DSC_0259.JPG);
     margin: 0;
     font-family: 'Open Sans' , sans-serif;
 }
@@ -64,10 +64,10 @@ nav ul li a:hover{
 }
 
 header{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0.5)), url(promotion.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0.5)), url(img/promotion.jpg);
     background-size: cover;
     background-position: center;
-    padding: 250px;
+    padding: 500px;
 }
 
 header h1{
@@ -113,7 +113,7 @@ section#input-form{
     padding: 20px;
 }
 
-form {
+.form {
     display: block;
     margin-top: 5em;
 }
@@ -6765,3 +6765,15 @@ form {
   }
 
   /* datepickerends */
+
+.form-payment{
+  position: relative;
+    max-width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 7px 0px rgba(54, 151, 151, 0.2);
+    padding: 20px;
+}
