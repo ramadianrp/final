@@ -9,30 +9,91 @@
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
     </head>
     <body>
-        <div class="container-fluid">
-            <h1>Hello World!</h1>
-            <p>Resize the browser window to see the effect.</p>
-            <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
-            <div class="row">
-                <div class="col-sm-4" style="background-color:lavender;">
-                    <img src="/final/img/deluxeroom.jpg" height="300px" width="450px" class="img-rounded">
-                </div>
+       
+        <!-- navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="home.html">HOME</a>
             </div>
-            <div class="col-sm-8" style="background-color:lavender">
-                <h3>Deluxe Room</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris
-                </p>
-                <span class="glyphicon glyphcon-cloud"></span>Wifi
-                <span class="glyphicon glyphcon-cloud"></span>Wifi
-                <span class="glyphicon glyphcon-cloud"></span>Wifi
-                <span class="glyphicon glyphcon-cloud"></span>Wifi
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="reserve.html">RESERVATION</a></li>
+                <li><a href="ourdeals.html">OUR DEALS</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+              </ul>
             </div>
           </div>
-    </body>
+        </nav>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="container-fluid">
+            <div class="text-center">
+              <h2>Our Deals</h2>
+              <h4>There's Some Deals For You!</h4>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="panel panel-default text-center">
+                  <div class="panel-heading">
+                    <h1>Couple</h1>
+                  </div>
+                  <div class="panel-body">
+                    <p>River View</p>
+                    <p>Private Place</p>
+                    <p>More Cheap</p>
+                  </div>
+                  <div class="panel-footer">
+                    <h3>$20</h3>
+                    <h4>/ 1 night(s)</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="panel panel-default text-center">
+                  <div class="panel-heading">
+                    <h1>Family</h1>
+                  </div>
+                  <div class="panel-body">
+                    <p>Bigger Place</p>
+                    <p>Bigger Space</p>
+                    <p>Mountain View</p>
+                  </div>
+                  <div class="panel-footer">
+                    <h3>$29</h3>
+                    <h4>/ 1 night(s)</h4>
+                  </div>
+                </div>
+              </div>
+             <div class="col-sm-4">
+                <div class="panel panel-default text-center">
+                  <div class="panel-heading">
+                    <h1>Retired</h1>
+                  </div>
+                  <div class="panel-body">
+                    <p>Lake View</p>
+                    <p>24/7 Reservation Help</p>
+                    <p>More Cheaper Than Others</p>
+                    <p>Tax Free</p>
+                  </div>
+                  <div class="panel-footer">
+                    <h3>$15</h3>
+                    <h4>/ 1 night(s)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+  </body>
 </html>

@@ -1,10 +1,19 @@
 body{
     background-size: cover;
-    background-image: url(img/DSC_0259.JPG);
+    
     margin: 0;
     font-family: 'Open Sans' , sans-serif;
 }
 
+.background{
+  background-image: url(img/background.jpg);
+  filter:alpha(opacity=40);
+}
+
+/* #room{
+  
+   
+} */
 /* nav{
     position: relative;
     width: 100%;
@@ -6777,3 +6786,16 @@ section#input-form{
     box-shadow: 0 0 7px 0px rgba(54, 151, 151, 0.2);
     padding: 20px;
 }
+
+/* .double-nav .breadcrumb-dn {
+  color: blue;
+} */
+
+footer{
+  background-color: black;
+  color: white;
+}
+
+#premium{
+  color: white;
+} 
